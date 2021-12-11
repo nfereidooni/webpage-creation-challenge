@@ -10,7 +10,7 @@
 
 .searchBar {
     border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
+    border-left: none;
     color: darkgrey;
     width: 335px !important;
     padding-left: 10px;
@@ -36,3 +36,4 @@
     color:darkgrey;
     text-decoration:  none;
 } */
+
