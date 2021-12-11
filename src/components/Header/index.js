@@ -28,14 +28,18 @@ function Header(props) {
           <Nav className="ml-auto mt-1 mt-lg-0">
             <Nav.Link className="navLink" href="#" onClick={() => setExpanded(false)}><i class="fas fa-binoculars"></i>&nbsp;Explore</Nav.Link> 
             <NavDropdown className="dashboardLink" title={<div style={{display: "inline-block"}}><i class="fas fa-tachometer-alt"></i> My Dashboard </div>} onClick={() => setExpanded(false)}>
-                <NavDropdown.Item href="#">User Dashboard</NavDropdown.Item>
+                <NavDropdown.Item href="#"><i class="fas fa-user"></i>&nbsp;User Dashboard</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className="dashboardLink" title={<div style={{display: "inline-block"}}><i class="fas fa-cog"></i> Manage </div>} onClick={() => setExpanded(false)}>
-                <NavDropdown.Item href="#">Profile</NavDropdown.Item>
+                <NavDropdown.Item href="#"><i class="fas fa-user"></i>&nbsp;Profile</NavDropdown.Item>
             </NavDropdown>
-            <input className="searchBar" placeholder="Search Challenges, Labs, Projects and People"/>
           </Nav>
+
         </Navbar.Collapse>
+            <div className="searchBarGroup row">
+                <button type="submit" className="submitButton"><i class="fa fa-search"></i></button>
+                <input type="text" className="searchBar" placeholder="Search Challenges, Labs, Projects and People"/>
+            </div>
       </Navbar>
     </Container>
   );

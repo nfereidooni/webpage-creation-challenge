@@ -2,6 +2,21 @@
     height: 50px;
 }
 
+.submitButton {
+    border: 1px solid grey;
+    color: rgb(85, 85, 85);
+    margin-left: 20px;
+}
+
+.searchBar {
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    color: darkgrey;
+    width: 335px !important;
+    padding-left: 10px;
+}
+
+
 /* .navLink:link {
     color:darkgrey;
     text-decoration:  none;
