@@ -4,16 +4,15 @@ hr {
     width: 90%;
     align-items: center;
     border-top: 1px solid lightgray;
-
 }
 
 .footerLinks {
     margin: 5px;
+    padding-bottom: 20px
 }
 
 .footerLinks:link {
     color: gray;
-
 }
 
 .footerLinks:visited {
