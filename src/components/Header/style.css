@@ -16,14 +16,36 @@
     padding-left: 10px;
 }
 
+.navbar-toggler-icon {
+    float: right;
+    margin: 0;
+}
+
 @media only screen and (max-width: 600px) {
     .searchGroup {
       padding-top: 10px;
       align-items: center;
       margin: 0 auto;
       display: block;
+      display: flex;
+      flex-wrap: wrap;
+
     }
     .submitButton {
         margin-left: 0;
     }
+    .headerName {
+        display:none;
+    }
+  }
+
+  @media only screen and (max-width: 396px) {
+    .searchBar {
+        border: 1px solid grey;
+        border-left: none;
+        color: darkgrey;
+        width: 258px !important;
+        padding-left: 10px;
+    }
+
   }

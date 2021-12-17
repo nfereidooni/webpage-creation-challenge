@@ -7,9 +7,6 @@ function Header(props) {
 
   const [expanded, setExpanded] = useState(false);
 
-//   const navDropdownTitle = (<i class="fas fa-tachometer-alt"></i>);
-  
-
   return (
     <Container>
       <Navbar className="Navbar-main"
