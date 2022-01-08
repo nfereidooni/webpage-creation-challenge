@@ -33,6 +33,7 @@ function Header(props) {
             </Nav>
             </Navbar.Collapse>
             <div className="searchGroup">
+              
 
                 <button type="submit" className="submitButton"><i class="fa fa-search"></i></button>
                 <input type="text" className="searchBar" placeholder="Search Challenges, Labs, Projects and People"/>

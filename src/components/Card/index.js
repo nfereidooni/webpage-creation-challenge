@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import "./style.css";
-import { CardImg } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 
 function Card(props) {

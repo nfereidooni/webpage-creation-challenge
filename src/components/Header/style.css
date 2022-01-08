@@ -1,3 +1,6 @@
+.Navbar-main {
+    position: a
+}
 .logo {
     height: 50px;
 }
@@ -26,9 +29,11 @@
       padding-top: 10px;
       align-items: center;
       margin: 0 auto;
-      display: block;
+      /* display: block; */
       display: flex;
       flex-wrap: wrap;
+      /* margin-top: 200px; */
+      /* width 100% or inline */
 
     }
     .submitButton {
