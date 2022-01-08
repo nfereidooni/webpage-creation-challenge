@@ -6,27 +6,27 @@ import OneCard from "../OneCard"
 
 function Home() {
 
-  const CODE_DATA = [
+  const CODE_DATA_CHALLENGES = [
 
-    {title: "Backend Developer Challenge 3: Ruby On Rails",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
-    imageAlt: "Backend Developer Challenge",
-    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+    {title: "Backend Developer Challenge 1: SQL",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/hn6fd9vCImNkx6Eygm4cNkUnO.png",
+    imageAlt: "Backend Developer Challenge icon",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-1-sql"
+  },
+    {title: "Backend Developer Challenge 2: HTML, CSS and PHP",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/Xmjj54N0oStU9seXcLArlNgpq.png",
+    imageAlt: "Backend Developer Challenge icon",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-2-html-css-and-php"
   },
     {title: "Backend Developer Challenge 3: Ruby On Rails",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
     imageAlt: "Backend Developer Challenge",
     link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
   },
-    {title: "Backend Developer Challenge 3: Ruby On Rails",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
+    {title: "Backend Developer Challenge 4: JavaScript",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/ogQbXxn46Kp796X8xDnexPYJG.png",
     imageAlt: "Backend Developer Challenge",
-    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
-  },
-    {title: "Backend Developer Challenge 3: Ruby On Rails",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
-    imageAlt: "Backend Developer Challenge",
-    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-4-javascript"
   }
     
 
@@ -46,17 +46,18 @@ function Home() {
             <Image src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png" className="col-xs-12 col-md-6 col-lg-4" rounded />
         </div> */}
 
+      <h1>Recommended Challenges</h1>
 
-      {CODE_DATA.map(item => (
-        <CardGroup>
+      <CardGroup>
+      {CODE_DATA_CHALLENGES.map(item => (
                 <OneCard 
                 title={item.title}
                 image={item.image}
                 imageAlt={item.imageAlt}
                 link={item.link}
                 />
-        </CardGroup>
         ))}
+      </CardGroup>
 
 
         {/* <CardGroup>
