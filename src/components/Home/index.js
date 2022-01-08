@@ -2,8 +2,37 @@ import React from "react";
 import "./style.css";
 import { Container, Image, CardGroup, Card} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
+import OneCard from "../OneCard"
 
 function Home() {
+
+  const CODE_DATA = [
+
+    {title: "Backend Developer Challenge 3: Ruby On Rails",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
+    imageAlt: "Backend Developer Challenge",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+  },
+    {title: "Backend Developer Challenge 3: Ruby On Rails",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
+    imageAlt: "Backend Developer Challenge",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+  },
+    {title: "Backend Developer Challenge 3: Ruby On Rails",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
+    imageAlt: "Backend Developer Challenge",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+  },
+    {title: "Backend Developer Challenge 3: Ruby On Rails",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
+    imageAlt: "Backend Developer Challenge",
+    link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails"
+  }
+    
+
+  ]
+
+
 
   return (
     <Container>
@@ -17,19 +46,18 @@ function Home() {
             <Image src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png" className="col-xs-12 col-md-6 col-lg-4" rounded />
         </div> */}
 
-      <div className="row portfolioContainer">
 
-      {sortedData.map(item => (
-        <div className="col-xs-12 col-md-6 col-lg-4">
-                <Card 
+      {CODE_DATA.map(item => (
+        <CardGroup>
+                <OneCard 
                 title={item.title}
                 image={item.image}
                 imageAlt={item.imageAlt}
                 link={item.link}
                 />
-        </div>
+        </CardGroup>
         ))}
-      </div>
+
 
         {/* <CardGroup>
           <Card classname="card">

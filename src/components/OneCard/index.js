@@ -3,7 +3,7 @@ import "./style.css";
 import { Card } from "react-bootstrap";
 
 
-function Card(props) {
+function OneCard(props) {
 
   return(
     <>          
@@ -17,4 +17,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default OneCard;
