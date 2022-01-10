@@ -14,25 +14,29 @@ function Home() {
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/hn6fd9vCImNkx6Eygm4cNkUnO.png",
     imageAlt: "Backend Developer Challenge icon Banner",
     link: "https://preprlabs.org/challengeManager/backend-developer-challenge-1-sql",
-    recommended: "yes"
+    recommended: "yes",
+    description: "Introduction: SQL is a query language that is used to interact with databases. It is a Domain Specific Language, meaning it is a specialized language that is used for working with data in databases."
   },
     {title: "Backend Developer Challenge 2: HTML, CSS and PHP",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/Xmjj54N0oStU9seXcLArlNgpq.png",
     imageAlt: "Backend Developer Challenge icon Banner",
     link: "https://preprlabs.org/challengeManager/backend-developer-challenge-2-html-css-and-php",
-    recommended: "yes"
+    recommended: "yes",
+    description: "Introduction: HTML is the basis for all web pages on the internet and CSS dictates how HTML elements will be displayed. In this challenge you will be given a template for a basic web page you will also use PHP to create a search functionality for the website."
   },
     {title: "Backend Developer Challenge 3: Ruby On Rails",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png",
     imageAlt: "Backend Developer Challenge Banner",
     link: "https://preprlabs.org/challengeManager/backend-developer-challenge-3-ruby-on-rails",
-    recommended: "yes"
+    recommended: "yes",
+    description: "Introduction: Ruby is an open-source object-oriented scripting language that is used in both front-end and back-end development to build web applications. It also has applications such as data analysis and prototyping."
   },
     {title: "Backend Developer Challenge 4: JavaScript",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/ogQbXxn46Kp796X8xDnexPYJG.png",
     imageAlt: "Backend Developer Challenge Banner",
     link: "https://preprlabs.org/challengeManager/backend-developer-challenge-4-javascript",
-    recommended: "yes"
+    recommended: "yes",
+    description: "Introduction: JavaScript is an interpreted scripting language that is used to make web pages interactive and program webpage behaviour. JavaScript is run from inside HTML web pages, so it must be called from within the webpage to run."
   }
   ]
 
@@ -42,25 +46,29 @@ function Home() {
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/895imtbPdSuzOstEtgCSJZ7pv.jpg",
     imageAlt: "FUN Winter 2021 logo Banner",
     link: "https://preprlabs.org/labs/fun-lab-winter-2021",
-    recommended: "yes"
+    recommended: "yes",
+    description: "Welcome to the Winter 2021 cohort of the F.U.N. program! We are so excited to help you launch your career over the next few months. This Lab is going to be your resource hub where we will be sharing resources and key updates. Check back regularly!"
   },
     {title: "Web Developer Career Lab",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/R0gpwVFsCiJdNMwLvsJRMFTwh.png",
     imageAlt: "Web Developer Career Lab Banner",
     link: "https://preprlabs.org/labs/web-developer-career-lab",
-    recommended: "yes"
+    recommended: "yes",
+    description: ""
   },
     {title: "UX Designer Career Lab",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/01dWNBtgBXu2JjgCDBHySQhoh.png",
     imageAlt: "UX Designer Career Lab Banner",
     link: "https://preprlabs.org/labs/ux-designer-career-lab",
-    recommended: "yes"
+    recommended: "yes",
+    description: ""
   },
     {title: "Project Manager Career Lab",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/RRnJEtAB8PgMaFVfReVPXWbvn.png",
     imageAlt: "Project Manager Career Lab Banner",
     link: "https://preprlabs.org/labs/project-manager-career-lab",
-    recommended: "yes"
+    recommended: "yes",
+    description: ""
   }
   ]
 
