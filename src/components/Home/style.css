@@ -16,6 +16,15 @@
     
   }
 
+h1 {
+  font-size: 16pt;
+  color: darkgrey;
+  align-items: center;
+  margin-left: 16px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
 .card {
   margin: 10px;
 }
