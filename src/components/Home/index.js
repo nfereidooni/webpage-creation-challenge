@@ -1,10 +1,12 @@
-import React from "react";
+import { React, useState } from "react";
 import "./style.css";
-import { Container, Image, CardGroup} from "react-bootstrap";
+import { Container, Image, CardGroup, Button} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import OneCard from "../OneCard"
 
 function Home() {
+
+  const [key, setKey] = useState('home');
 
   const CODE_DATA_CHALLENGES = [
 
@@ -101,6 +103,8 @@ function Home() {
           ))}
         </CardGroup>
 
+        <Button className="exploreMoreButton text-right float-right" variant="outline-success">Explore More Challenges</Button>{' '}
+
         <h1>Recommended Labs</h1>
 
         <CardGroup>
@@ -113,6 +117,8 @@ function Home() {
                   />
           ))}
         </CardGroup>
+
+        <Button className="exploreMoreButton text-right float-right" variant="outline-success">Explore More Labs</Button>{' '}
 
         <h1>Recommended Resources</h1>
 
@@ -127,31 +133,15 @@ function Home() {
           ))}
         </CardGroup>
 
+        <Button className="exploreMoreButton text-right float-right" variant="outline-success">Explore More Resources</Button>{' '}
+
       </div>
+      
 
 
 
 
-        {/* <CardGroup>
-          <Card classname="card">
-            <Card.Img variant="top" src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png" />
-            <Card.Body>
-            <Card.Link href="#">Backend Developer Challenge 3: Ruby On Rails</Card.Link>
-            </Card.Body>
-          </Card>
-          <Card classname="card">
-            <Card.Img variant="top" src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png" />
-            <Card.Body>
-            <Card.Link href="#">Backend Developer Challenge 3: Ruby On Rails</Card.Link>
-            </Card.Body>
-          </Card>
-          <Card classname="card">
-            <Card.Img variant="top" src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/gekFqWWbKv9XP9Bjh40HoDEFM.png" />
-            <Card.Body>
-            <Card.Link href="#">Backend Developer Challenge 3: Ruby On Rails</Card.Link>
-            </Card.Body>
-          </Card>
-        </CardGroup> */}
+        
 
 
 

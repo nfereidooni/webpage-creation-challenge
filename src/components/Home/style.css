@@ -21,10 +21,15 @@ h1 {
   color: darkgrey;
   align-items: center;
   margin-left: 16px;
-  margin-top: 20px;
+  margin-top: 60px;
   font-family: sans-serif;
 }
 
 .card {
   margin: 10px;
+}
+
+.exploreMoreButton {
+  margin-top: 20px;
+  margin-right: 16px;
 }
