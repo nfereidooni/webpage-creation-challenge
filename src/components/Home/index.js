@@ -56,25 +56,25 @@ function Home() {
 
   const CODE_DATA_RESOURCES = [
 
-    {title: "The Future of Ho",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/895imtbPdSuzOstEtgCSJZ7pv.jpg",
-    imageAlt: "FUN Winter 2021 logo Banner",
-    link: "https://preprlabs.org/labs/fun-lab-winter-2021"
+    {title: "The Future of Finance",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/resources/image/9qhhqIMrnjCCblIUD2oBxSnE6uWoMMttqfK7Cm3G.png",
+    imageAlt: "The Future of Finance Resource Banner",
+    link: "https://preprlabs.org/resource-module/the-future-of-finance/view"
   },
     {title: "The Future of Hospitality",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/resources/image/ffOjSMBPNFHXOQCFNtqaby1RascSJrIDjm7so52x.png",
     imageAlt: "The Future of Hospitality Resource Banner",
     link: "https://preprlabs.org/resource-module/the-future-of-hospitality/view"
   },
-    {title: "UX Designer Career Lab",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/01dWNBtgBXu2JjgCDBHySQhoh.png",
-    imageAlt: "UX Designer Career Lab Banner",
-    link: "https://preprlabs.org/labs/ux-designer-career-lab"
+    {title: "Identifying Future Life Trends In Transportation",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/resources/image/e85ZYA2owVaNwXAEGkrLH1Dgal5J7l4Ay89nMTTG.png",
+    imageAlt: "The Future of Transportation Resource Banner",
+    link: "https://preprlabs.org/resource-module/identifying-future-life-trends-in-transportation/view"
   },
-    {title: "Project Manager Career Lab",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/RRnJEtAB8PgMaFVfReVPXWbvn.png",
-    imageAlt: "Project Manager Career Lab Banner",
-    link: "https://preprlabs.org/labs/project-manager-career-lab"
+    {title: "Global Methane Assessment - Benefits and Costs of Mitigating Methane Emissions",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/resources/image/GUGkVv7xXA1yYhCcJywOAiV3WBgyTjirQKqcfLNW.png",
+    imageAlt: "Global Methane Assessment Resource Banner",
+    link: "https://preprlabs.org/resource-module/global-methane-assessment-benefits-and-costs-of-mitigating-methane-emissions/view"
   }
   ]
 
