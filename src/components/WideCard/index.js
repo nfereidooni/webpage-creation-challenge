@@ -1,14 +1,14 @@
-import React, {useState} from "react"
+import React  from "react"
 import "./style.css";
 import { Card } from "react-bootstrap";
 
 
-function OneCard(props) {
+function WideCard(props) {
 
   return(
     <>          
-          <Card className="card">
-            <Card.Img variant="top" src={props.image} alt={props.imageAlt} />
+          <Card className="wideCard">
+            <Card.Img variant="right" src={props.image} alt={props.imageAlt} />
             <Card.Body>
             <Card.Link href={props.link}>{props.title}</Card.Link>
             </Card.Body>
@@ -17,4 +17,4 @@ function OneCard(props) {
   );
 }
 
-export default OneCard;
+export default WideCard;

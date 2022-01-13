@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import "./style.css";
-import { Container, Image, CardGroup, Button, Tabs, Tab} from "react-bootstrap";
+import { Container, Image, Card, CardGroup, Button, Tabs, Tab} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
-import OneCard from "../OneCard"
+import RecommendedCard from "../RecommendedCard"
 
 function Home() {
 
@@ -113,8 +113,10 @@ function Home() {
         <h1>Recommended Challenges</h1>
 
         <CardGroup>
+
+          
         {CODE_DATA_CHALLENGES.map(item => (
-                  <OneCard
+                  <RecommendedCard
                   title={item.title}
                   image={item.image}
                   imageAlt={item.imageAlt}
@@ -131,7 +133,7 @@ function Home() {
 
         <CardGroup>
         {CODE_DATA_LABS.map(item => (
-                  <OneCard
+                  <RecommendedCard
                   title={item.title}
                   image={item.image}
                   imageAlt={item.imageAlt}
@@ -148,7 +150,7 @@ function Home() {
 
         <CardGroup>
         {CODE_DATA_RESOURCES.map(item => (
-                  <OneCard
+                  <RecommendedCard
                   title={item.title}
                   image={item.image}
                   imageAlt={item.imageAlt}
@@ -176,6 +178,21 @@ function Home() {
         <Tab eventKey="challenges" title="Challenges">
           {/* <Sonnet /> */}
           <p>test test</p>
+          <CardGroup>
+            <Card className="wideCard" style={{ maxWidth: '540px'}}>
+              <div className="row g-0">
+                <div className="col-4">
+                  <Card.Img variant="right" src="https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/hn6fd9vCImNkx6Eygm4cNkUnO.png" alt="Backend Developer Challenge icon Banner" />
+                </div>
+                <div className="col-8">
+                  <Card.Body>
+                    <Card.Link href="https://preprlabs.org/challengeManager/backend-developer-challenge-1-sql">Backend Developer Challenge 1: SQL</Card.Link>
+                    <Card.Text>Introduction: SQL is a query language that is used to interact with databases. It is a Domain Specific Language, meaning it is a specialized language that is used for working with data in databases.</Card.Text>
+                  </Card.Body>
+                </div>
+              </div> 
+            </Card>
+          </CardGroup>
         </Tab>
         <Tab eventKey="labs" title="Labs">
           <p>more tests</p>
@@ -186,14 +203,6 @@ function Home() {
       </Tabs>
       
       </div>
-      
-
-
-
-
-        
-
-
 
     </Container>
   );
