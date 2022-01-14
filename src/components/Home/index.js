@@ -4,6 +4,7 @@ import { Container, Image, CardGroup, Button, Tabs, Tab} from "react-bootstrap";
 
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import RecommendedCard from "../RecommendedCard"
+import WideCard from "../WideCard"
 
 function Home() {
 
@@ -113,6 +114,22 @@ function Home() {
   }
   ]
 
+// Filter recommended data
+
+  const searchText = 'yes';
+  const recChallenges = CODE_DATA_CHALLENGES.filter((item)=>{
+  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  });
+
+  const recLabs = CODE_DATA_LABS.filter((item)=>{
+  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  });
+
+  const recResources = CODE_DATA_RESOURCES.filter((item)=>{
+  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  });
+  
+
 
   return (
     <Container>
@@ -128,7 +145,7 @@ function Home() {
         <CardGroup>
 
           
-        {CODE_DATA_CHALLENGES.map(item => (
+        {recChallenges.map(item => (
                   <RecommendedCard
                   title={item.title}
                   image={item.image}
@@ -145,7 +162,7 @@ function Home() {
         <h1>Recommended Labs</h1>
 
         <CardGroup>
-        {CODE_DATA_LABS.map(item => (
+        {recLabs.map(item => (
                   <RecommendedCard
                   title={item.title}
                   image={item.image}
@@ -162,7 +179,7 @@ function Home() {
         <h1>Recommended Resources</h1>
 
         <CardGroup>
-        {CODE_DATA_RESOURCES.map(item => (
+        {recResources.map(item => (
                   <RecommendedCard
                   title={item.title}
                   image={item.image}
