@@ -74,6 +74,14 @@ function Home() {
     recommended: "no",
     type: "Challenge",
     description: "User testing is an essential part of any development process and an essential part of a UX designers role. User testing allows a UX designer to create further iterations of their design and to improve their design for better optimization."
+  },
+    {title: "Career Planning Challenge 1: Assess Yourself",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/4hCFyGKKi5qyknym7FuOLxOvM.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/challengeManager/career-planning-challenge-1-assess-yourself",
+    recommended: "no",
+    type: "Challenge",
+    description: "Your past experience offers the best clues to identify your strengths, skills & work preferences. Think about your favourite project and courses, and the ones you did not enjoy."
   }
   ]
 
@@ -139,6 +147,14 @@ function Home() {
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/4yXO8qcBRSfrM2ACyfatv5Q1E.png",
     imageAlt: "Cloud Architect Career Lab Banner",
     link: "https://preprlabs.org/labs/cloud-architect-career-lab",
+    recommended: "no",
+    type: "Lab",
+    description: ""
+  },
+    {title: "Career Planning Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/MW6luFvNXTF7dHaEfFARbmokH.png",
+    imageAlt: "Career Planning Lab Banner",
+    link: "https://preprlabs.org/labs/career-planning-lab",
     recommended: "no",
     type: "Lab",
     description: ""
