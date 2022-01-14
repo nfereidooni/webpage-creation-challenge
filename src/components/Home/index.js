@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import "./style.css";
 import { Container, Image, CardGroup, Button, Tabs, Tab} from "react-bootstrap";
-
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import RecommendedCard from "../RecommendedCard"
 import WideCard from "../WideCard"
@@ -43,6 +42,38 @@ function Home() {
     recommended: "yes",
     type: "Challenge",
     description: "Introduction: JavaScript is an interpreted scripting language that is used to make web pages interactive and program webpage behaviour. JavaScript is run from inside HTML web pages, so it must be called from within the webpage to run."
+  },
+    {title: "UX Designer Challenge 1: User Research",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/Sw8lephTlNGlM4WU8avBMkHCX.png",
+    imageAlt: "UX Designer Challenge Banner",
+    link: "https://preprlabs.org/challengeManager/ux-designer-challenge-1-user-research",
+    recommended: "no",
+    type: "Challenge",
+    description: "A UX designer is responsible for designing, or assisting in the design, of a website or application; their job is to optimize the application or website for user experience (UX). UX design puts people at the centre of design thinking."
+  },
+    {title: "UX Designer Challenge 2: Information Architecture",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/KvHhcAgUWzPgwJedCEgZlilHC.png",
+    imageAlt: "UX Designer Challenge Banner",
+    link: "https://preprlabs.org/challengeManager/ux-designer-challenge-2-information-architecture",
+    recommended: "no",
+    type: "Challenge",
+    description: "Information architecture (sometimes shortened to IA) is a way of communicating and designing the structure of a website or application. Information architecture can often look like a sort of flow chart."
+  },
+    {title: "UX Designer Challenge 3: Wireframing",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/odrZggQeL1yLcjCmPSBqHtHJX.png",
+    imageAlt: "UX Designer Challenge Banner",
+    link: "https://preprlabs.org/challengeManager/ux-designer-challenge-3-wireframing",
+    recommended: "no",
+    type: "Challenge",
+    description: "What is a wireframe? A wireframe is an outline or blueprint for a website or application. This blueprint will communicate the information hierarchy of the proposed digital solution and dictate what goes where."
+  },
+    {title: "UX Designer Challenge 4: User Experience Testing",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/SubYh0bZ1evYDqCAKOtgIQ2f3.png",
+    imageAlt: "UX Designer Challenge Banner",
+    link: "https://preprlabs.org/challengeManager/ux-designer-challenge-4-user-experience-testing",
+    recommended: "no",
+    type: "Challenge",
+    description: "User testing is an essential part of any development process and an essential part of a UX designers role. User testing allows a UX designer to create further iterations of their design and to improve their design for better optimization."
   }
   ]
 
@@ -64,14 +95,7 @@ function Home() {
     type: "Lab",
     description: ""
   },
-    {title: "UX Designer Career Lab",
-    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/01dWNBtgBXu2JjgCDBHySQhoh.png",
-    imageAlt: "UX Designer Career Lab Banner",
-    link: "https://preprlabs.org/labs/ux-designer-career-lab",
-    recommended: "yes",
-    type: "Lab",
-    description: ""
-  },
+c
     {title: "Project Manager Career Lab",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/RRnJEtAB8PgMaFVfReVPXWbvn.png",
     imageAlt: "Project Manager Career Lab Banner",
@@ -116,20 +140,29 @@ function Home() {
 
 // Filter recommended data
 
-  const searchText = 'yes';
+  const searchTextYes = 'yes';
   const recChallenges = CODE_DATA_CHALLENGES.filter((item)=>{
-  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  return Object.keys(item).some((key)=>item[key].includes(searchTextYes));
   });
 
   const recLabs = CODE_DATA_LABS.filter((item)=>{
-  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  return Object.keys(item).some((key)=>item[key].includes(searchTextYes));
   });
 
   const recResources = CODE_DATA_RESOURCES.filter((item)=>{
-  return Object.keys(item).some((key)=>item[key].includes(searchText));
+  return Object.keys(item).some((key)=>item[key].includes(searchTextYes));
   });
-  
 
+// Filter recommended out of rest of data
+
+  const searchTextNo = 'no';
+  const notRecChallenges = CODE_DATA_CHALLENGES.filter((item)=>{
+  return Object.keys(item).some((key)=>item[key].includes(searchTextNo));
+  });
+
+  const notRecLabs = CODE_DATA_LABS.filter((item)=>{
+  return Object.keys(item).some((key)=>item[key].includes(searchTextNo));
+  });
 
   return (
     <Container>
@@ -206,9 +239,16 @@ function Home() {
       className="exploreTabs mb-3 text-center"
     >
         <Tab eventKey="challenges" title="Challenges">
-          {/* <Sonnet /> */}
-
-
+        {notRecChallenges.map(item => (
+                  <WideCard
+                  title={item.title}
+                  image={item.image}
+                  imageAlt={item.imageAlt}
+                  link={item.link}
+                  type={item.type}
+                  description={item.description}
+                  />
+          ))}
         </Tab>
         <Tab eventKey="labs" title="Labs">
           <p>more tests</p>
