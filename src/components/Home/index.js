@@ -95,12 +95,51 @@ function Home() {
     type: "Lab",
     description: ""
   },
-c
+    {title: "UX Designer Career Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/01dWNBtgBXu2JjgCDBHySQhoh.png",
+    imageAlt: "UX Designer Career Lab Banner",
+    link: "https://preprlabs.org/labs/ux-designer-career-lab",
+    recommended: "yes",
+    type: "Lab",
+    description: ""
+  },
     {title: "Project Manager Career Lab",
     image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/RRnJEtAB8PgMaFVfReVPXWbvn.png",
     imageAlt: "Project Manager Career Lab Banner",
     link: "https://preprlabs.org/labs/project-manager-career-lab",
     recommended: "yes",
+    type: "Lab",
+    description: ""
+  },
+    {title: "Junior Data Scientist Career Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/3iT9Vn0fjZesAstXIblvGKTcx.png",
+    imageAlt: "Data Scientist Career Lab Banner",
+    link: "https://preprlabs.org/labs/junior-data-scientist-career-lab",
+    recommended: "no",
+    type: "Lab",
+    description: ""
+  },
+    {title: "Graphic Designer Career Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/hQXEULmlQ8aruoLVJfTBCY7zH.png",
+    imageAlt: "Grapphic Designer Career Lab Banner",
+    link: "https://preprlabs.org/labs/graphic-designer-career-lab",
+    recommended: "no",
+    type: "Lab",
+    description: ""
+  },
+    {title: "Digital Producer Career Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/ItPzphyczKcSPSn3dCIiJiVDP.png",
+    imageAlt: "Digital Producer Career Lab Banner",
+    link: "https://preprlabs.org/labs/digital-producer-career-lab",
+    recommended: "no",
+    type: "Lab",
+    description: ""
+  },    
+    {title: "Cloud Architect Career Lab",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/labs/4yXO8qcBRSfrM2ACyfatv5Q1E.png",
+    imageAlt: "Cloud Architect Career Lab Banner",
+    link: "https://preprlabs.org/labs/cloud-architect-career-lab",
+    recommended: "no",
     type: "Lab",
     description: ""
   }
@@ -239,19 +278,28 @@ c
       className="exploreTabs mb-3 text-center"
     >
         <Tab eventKey="challenges" title="Challenges">
-        {notRecChallenges.map(item => (
-                  <WideCard
-                  title={item.title}
-                  image={item.image}
-                  imageAlt={item.imageAlt}
-                  link={item.link}
-                  type={item.type}
-                  description={item.description}
-                  />
-          ))}
+          {notRecChallenges.map(item => (
+                    <WideCard
+                    title={item.title}
+                    image={item.image}
+                    imageAlt={item.imageAlt}
+                    link={item.link}
+                    type={item.type}
+                    description={item.description}
+                    />
+            ))}
         </Tab>
         <Tab eventKey="labs" title="Labs">
-          <p>more tests</p>
+          {notRecLabs.map(item => (
+                    <WideCard
+                    title={item.title}
+                    image={item.image}
+                    imageAlt={item.imageAlt}
+                    link={item.link}
+                    type={item.type}
+                    description={item.description}
+                    />
+            ))}
         </Tab>
         <Tab eventKey="projects" title="Projects">
           <p>even more tests</p>
