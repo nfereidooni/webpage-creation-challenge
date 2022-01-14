@@ -177,9 +177,51 @@ function Home() {
   }
   ]
 
+  const CODE_DATA_PROJECTS = [
+
+    {title: "CodeByNiki: Career Challenge 1",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/4hCFyGKKi5qyknym7FuOLxOvM.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/projects/codebyniki-career-challenge-1",
+    type: "Project",
+    recommended: ""
+  },
+    {title: "CodeByNiki: Career Challenge 2",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/ZUrx4IQ3G0MAVwCEEY7rxrm4P.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/projects/codebyniki-career-challenge-2",
+    type: "Project",
+    recommended: ""
+  },
+    {title: "CodeByNiki: Career Challenge 3",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/ms0HZKwNWeESdLMChipkLy0Jt.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/projects/codebyniki-career-challenge-3",
+    type: "Project",
+    recommended: ""
+  },
+    {title: "CodeByNiki: Career Challenge 4",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/hE8SIVl7WvTjfiEJD6eCmYdQv.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/projects/codebyniki-career-challenge-4",
+    type: "Project",
+    recommended: ""
+  },
+    {title: "CodeByNiki: Career Challenge 5",
+    image: "https://prepr-media-live.s3.ca-central-1.amazonaws.com/uploads/challenge/ai8H6UaeW4DERdOPhRoBzQry3.png",
+    imageAlt: "Career Planning Challenge Banner",
+    link: "https://preprlabs.org/projects/codebyniki-career-challenge-5",
+    type: "Project",
+    recommended: ""
+  }
+  ]
+
+
+
 // Filter recommended data
 
   const searchTextYes = 'yes';
+
   const recChallenges = CODE_DATA_CHALLENGES.filter((item)=>{
   return Object.keys(item).some((key)=>item[key].includes(searchTextYes));
   });
@@ -195,6 +237,7 @@ function Home() {
 // Filter recommended out of rest of data
 
   const searchTextNo = 'no';
+
   const notRecChallenges = CODE_DATA_CHALLENGES.filter((item)=>{
   return Object.keys(item).some((key)=>item[key].includes(searchTextNo));
   });
@@ -302,7 +345,16 @@ function Home() {
             ))}
         </Tab>
         <Tab eventKey="projects" title="Projects">
-          <p>even more tests</p>
+          {CODE_DATA_PROJECTS.map(item => (
+                    <WideCard
+                    title={item.title}
+                    image={item.image}
+                    imageAlt={item.imageAlt}
+                    link={item.link}
+                    type={item.type}
+                    description={item.description}
+                    />
+            ))}
         </Tab>
       </Tabs>
       
