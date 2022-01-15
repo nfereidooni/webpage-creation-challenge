@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Container, Navbar, Nav, NavDropdown, Image} from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown, Image, Form, Button, FormControl} from "react-bootstrap";
 
 
 function Header(props) {
@@ -14,6 +14,7 @@ function Header(props) {
         variant="light"
         fixed="top"
       >
+        <Container fluid>
             <Navbar.Brand href="http://www.preprlabs.org" className="navbarBrand">
                 <Image className="logo" src="https://d2qgo50yy98y8.cloudfront.net/public/front/img/logo.png"/>
             </Navbar.Brand>
@@ -37,14 +38,18 @@ function Header(props) {
                     <NavDropdown.Item href="#"><i class="fas fa-cog"></i>&nbsp;&nbsp;Settings</NavDropdown.Item>
                 </NavDropdown>
             </Nav>
+            <Form className="d-flex">
+              <FormControl
+                type="search"
+                placeholder="Search"
+                className="form-control me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success"><i class="fa fa-search"></i></Button>
+            </Form>
             </Navbar.Collapse>
-            <div className="searchGroup">
-              
 
-                <button type="submit" className="submitButton"><i class="fa fa-search"></i></button>
-                <input type="text" className="searchBar" placeholder="Search Challenges, Labs, Projects and People"/>
-
-            </div>
+          </Container>
         </Navbar>
 
     </Container>
