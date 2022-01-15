@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./style.css";
-import { Container, Image, CardGroup, Button, Tabs, Tab} from "react-bootstrap";
+import { Container, Image, CardGroup, Button, Tabs, Row, Tab} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import RecommendedCard from "../RecommendedCard"
 import WideCard from "../WideCard"
@@ -273,18 +273,16 @@ function Home() {
       <div classname="recommendedCards">
         <h1>Recommended Challenges</h1>
 
-        <CardGroup>
-
-          
-        {recChallenges.map(item => (
-                  <RecommendedCard
-                  title={item.title}
-                  image={item.image}
-                  imageAlt={item.imageAlt}
-                  link={item.link}
-                  />
-          ))}
-        </CardGroup>
+        <Row xs={1} md={2} lg={4} className="g-4">
+          {recChallenges.map(item => (
+                    <RecommendedCard
+                    title={item.title}
+                    image={item.image}
+                    imageAlt={item.imageAlt}
+                    link={item.link}
+                    />
+            ))}
+        </Row>
         
         <div className="text-right">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Challenges</Button>{' '}
@@ -292,7 +290,7 @@ function Home() {
 
         <h1>Recommended Labs</h1>
 
-        <CardGroup>
+        <Row xs={1} md={2} lg={4} className="g-4">
         {recLabs.map(item => (
                   <RecommendedCard
                   title={item.title}
@@ -301,7 +299,7 @@ function Home() {
                   link={item.link}
                   />
           ))}
-        </CardGroup>
+        </Row>
 
         <div className="text-right">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Labs</Button>{' '}
@@ -309,7 +307,7 @@ function Home() {
 
         <h1>Recommended Resources</h1>
 
-        <CardGroup>
+        <Row xs={1} md={2} lg={4} className="g-4">
         {recResources.map(item => (
                   <RecommendedCard
                   title={item.title}
@@ -318,7 +316,7 @@ function Home() {
                   link={item.link}
                   />
           ))}
-        </CardGroup>
+        </Row>
 
         <div className="text-right">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Resources</Button>{' '}
