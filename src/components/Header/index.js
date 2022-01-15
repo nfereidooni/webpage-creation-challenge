@@ -41,7 +41,7 @@ function Header(props) {
             <Form className="d-flex">
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search Challenges, Labs, Projects and People"
                 className="form-control me-2"
                 aria-label="Search"
               />
