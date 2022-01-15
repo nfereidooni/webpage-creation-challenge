@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./style.css";
-import { Container, Image, CardGroup, Button, Tabs, Row, Tab} from "react-bootstrap";
+import { Container, Image, Button, Tabs, Row, Tab} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import RecommendedCard from "../RecommendedCard"
 import WideCard from "../WideCard"
