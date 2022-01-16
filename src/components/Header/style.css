@@ -22,3 +22,20 @@
     float: right;
     margin: 0;
 }
+
+.userMenu {
+    padding-left: 80px;
+}
+
+/* @media only screen and (max-width: 1093px) {
+    .userMenu{
+        padding-left: 30px;
+    }
+  } */
+
+@media only screen and (max-width: 991px) {
+    .userMenu{
+        padding-left: 0px;
+    }
+  }
+  

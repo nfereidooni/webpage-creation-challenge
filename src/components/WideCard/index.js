@@ -1,5 +1,4 @@
 import React  from "react"
-import "./style.css";
 import { MDBCard, MDBCardLink, MDBCardText, MDBCardBody, MDBCardImage, MDBRow, MDBCol } from 'mdb-react-ui-kit'
 
 
