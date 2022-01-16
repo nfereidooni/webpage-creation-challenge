@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/webpage-creation-challenge/static/css/main.3d882f3e.chunk.css",
+    "main.js": "/webpage-creation-challenge/static/js/main.d2c7659c.chunk.js",
+    "main.js.map": "/webpage-creation-challenge/static/js/main.d2c7659c.chunk.js.map",
+    "runtime-main.js": "/webpage-creation-challenge/static/js/runtime-main.f5390dde.js",
+    "runtime-main.js.map": "/webpage-creation-challenge/static/js/runtime-main.f5390dde.js.map",
+    "static/css/2.8c0e6b67.chunk.css": "/webpage-creation-challenge/static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.851a5400.chunk.js": "/webpage-creation-challenge/static/js/2.851a5400.chunk.js",
+    "static/js/2.851a5400.chunk.js.map": "/webpage-creation-challenge/static/js/2.851a5400.chunk.js.map",
+    "static/js/3.a3d77502.chunk.js": "/webpage-creation-challenge/static/js/3.a3d77502.chunk.js",
+    "static/js/3.a3d77502.chunk.js.map": "/webpage-creation-challenge/static/js/3.a3d77502.chunk.js.map",
+    "index.html": "/webpage-creation-challenge/index.html",
+    "static/css/2.8c0e6b67.chunk.css.map": "/webpage-creation-challenge/static/css/2.8c0e6b67.chunk.css.map",
+    "static/css/main.3d882f3e.chunk.css.map": "/webpage-creation-challenge/static/css/main.3d882f3e.chunk.css.map",
+    "static/js/2.851a5400.chunk.js.LICENSE.txt": "/webpage-creation-challenge/static/js/2.851a5400.chunk.js.LICENSE.txt",
+    "static/media/IMG_Niki.5eeaf6b0.jpg": "/webpage-creation-challenge/static/media/IMG_Niki.5eeaf6b0.jpg",
+    "static/media/preprbanner_01.def3e8ce.jpg": "/webpage-creation-challenge/static/media/preprbanner_01.def3e8ce.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5390dde.js",
+    "static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.851a5400.chunk.js",
+    "static/css/main.3d882f3e.chunk.css",
+    "static/js/main.d2c7659c.chunk.js"
+  ]
+}
