@@ -273,8 +273,6 @@ function Home(props) {
           <div class="centered">Welcome back, Niki Fereidooni!</div>
       </div>
 
-      {/* <DarkModeToggle /> */}
-
       <div classname="recommendedCards">
         <h1>Recommended Challenges</h1>
 
@@ -290,7 +288,7 @@ function Home(props) {
             ))}
         </Row>
         
-        <div className="text-right">
+        <div className="exploreMoreContainer">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Challenges</Button>{' '}
         </div>
 
@@ -308,7 +306,7 @@ function Home(props) {
           ))}
         </Row>
 
-        <div className="text-right">
+        <div className="exploreMoreContainer">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Labs</Button>{' '}
         </div>
 
@@ -326,7 +324,7 @@ function Home(props) {
           ))}
         </Row>
 
-        <div className="text-right">
+        <div className="exploreMoreContainer">
           <Button className="exploreMoreButton" variant="outline-success">Explore More Resources</Button>{' '}
         </div>
 
