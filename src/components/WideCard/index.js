@@ -4,9 +4,19 @@ import { MDBCard, MDBCardLink, MDBCardText, MDBCardBody, MDBCardImage, MDBRow, M
 
 function WideCard(props) {
 
+  let background = "white"
+  let textColor = ""
+
+    if (props.darkMode.value === true) {
+      background = "dark"
+      textColor = "text-white"
+    }
+
+
+// background='dark' className='text-white'
   return(
     <>          
-          <MDBCard>
+          <MDBCard background={background} className={textColor}>
             <MDBRow className='g-0'>
               <MDBCol md='4'>
                 <MDBCardImage src={props.image} alt={props.imageAlt} fluid />

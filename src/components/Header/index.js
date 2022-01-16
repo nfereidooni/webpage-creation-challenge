@@ -5,13 +5,21 @@ import userImage from "../assets/img/IMG_Niki.jpg"
 
 function Header(props) {
 
+  // console.log(props.darkMode.value)
+
+  let variant = "light"
+
+  if (props.darkMode.value === true) {
+    variant = "dark"
+  }
+
   return (
     <Container>
       <Navbar className="Navbar-main"
         collapseOnSelect
         expand="lg"
-        bg="light"
-        variant="light"
+        bg={variant}
+        variant={variant}
         fixed="top"
       >
         <Container fluid>
