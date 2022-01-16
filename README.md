@@ -22,7 +22,7 @@ Additional Objectives:
 - Feel free to re-design this page to showcase your creativity.
 
 ## Installation:
-Website Live: https://nfereidooni.github.io/webpage-creation-challenge/
+Live Website: https://nfereidooni.github.io/webpage-creation-challenge/
 
 ## Packages
 - React-Bootstrap (https://react-bootstrap.github.io/)
