@@ -25,15 +25,15 @@ Additional Objectives:
 Website Live: https://nfereidooni.github.io/webpage-creation-challenge/
 
 ## Packages
-React-Bootstrap (https://react-bootstrap.github.io/)
-MD React Bootstrap (https://mdbootstrap.com/docs/react/)
-SASS (https://sass-lang.com/)
-Use Dark Mode (https://github.com/donavon/use-dark-mode)
+- React-Bootstrap (https://react-bootstrap.github.io/)
+- MD React Bootstrap (https://mdbootstrap.com/docs/react/)
+- SASS (https://sass-lang.com/)
+- Use Dark Mode (https://github.com/donavon/use-dark-mode)
 
 ## Screenshots
 
-![Challenge Light Mode Screenshot](/components/assets/img/prepr_light-mode.PNG)
-![Challenge Dark Mode Screenshot](/components/assets/img/prepr_dark-mode.PNG)
+![Challenge Light Mode Screenshot](/src/components/assets/img/prepr_light-mode.PNG)
+![Challenge Dark Mode Screenshot](/src/components/assets/img/prepr_dark-mode.PNG)
 
 ## License:
 MIT LICENSE
