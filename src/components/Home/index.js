@@ -4,7 +4,6 @@ import { Container, Image, Button, Tabs, Row, Tab} from "react-bootstrap";
 import banner_01 from "../assets/img/preprbanner_01.jpg"
 import RecommendedCard from "../RecommendedCard"
 import WideCard from "../WideCard"
-import DarkModeToggle from '../DarkModeToggle';
 
 
 const CODE_DATA_CHALLENGES = [
