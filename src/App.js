@@ -19,13 +19,8 @@ function App() {
             <DarkModeToggle darkMode={darkMode} />
           </div>
           <Routes>
-            <Route exact path="/" element={<Home
-                    // isDark={true}
-                    // isDark={darkMode.value}
-                    darkMode={darkMode}
-                    />}/>
+            <Route exact path="/" element={<Home darkMode={darkMode}/>} />
           </Routes>
-          
           <Footer />
         </div>
       </div>

@@ -2,28 +2,12 @@
     height: 50px;
 }
 
-/* .submitButton {
-    border: 1px solid grey;
-    color: rgb(85, 85, 85);
-    margin-left: 20px;
-} */
-
-/* .searchBar {
-    width: 400px;
-  
-} */
-
 .form-control {
     border: 1px solid grey;
     color: darkgrey;
     width: 353px !important;
     padding-left: 10px;
 }
-
-/* .navbar-toggler-icon {
-    float: right;
-    margin: 0;
-} */
 
 .userMenu {
     padding-left: 80px;

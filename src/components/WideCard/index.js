@@ -12,8 +12,6 @@ function WideCard(props) {
       textColor = "text-white"
     }
 
-
-// background='dark' className='text-white'
   return(
     <>          
           <MDBCard background={background} className={textColor}>

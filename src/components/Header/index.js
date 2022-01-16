@@ -4,9 +4,7 @@ import { Container, Navbar, Nav, NavDropdown, Image, Form, Button, FormControl }
 import userImage from "../assets/img/IMG_Niki.jpg"
 
 function Header(props) {
-
-  // console.log(props.darkMode.value)
-
+  
   let variant = "light"
 
   if (props.darkMode.value === true) {
