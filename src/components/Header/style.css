@@ -1,15 +1,17 @@
-.Navbar-main {
-    position: a
-}
 .logo {
     height: 50px;
 }
 
-.submitButton {
+/* .submitButton {
     border: 1px solid grey;
     color: rgb(85, 85, 85);
     margin-left: 20px;
-}
+} */
+
+/* .searchBar {
+    width: 400px;
+  
+} */
 
 .form-control {
     border: 1px solid grey;
@@ -18,20 +20,20 @@
     padding-left: 10px;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     float: right;
     margin: 0;
-}
+} */
 
 .userMenu {
     padding-left: 80px;
 }
 
-/* @media only screen and (max-width: 1093px) {
+@media only screen and (max-width: 1093px) {
     .userMenu{
         padding-left: 30px;
     }
-  } */
+  }
 
 @media only screen and (max-width: 991px) {
     .userMenu{
