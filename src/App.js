@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css"
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -15,6 +15,9 @@ function App() {
       <div>
         <div>
           <Header darkMode={darkMode} />
+          <div className="navbar">
+            <DarkModeToggle darkMode={darkMode} />
+          </div>
           <Routes>
             <Route exact path="/" element={<Home
                     // isDark={true}
@@ -22,7 +25,7 @@ function App() {
                     darkMode={darkMode}
                     />}/>
           </Routes>
-          <DarkModeToggle darkMode={darkMode} />
+          
           <Footer />
         </div>
       </div>
