@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/webpage-creation-challenge/static/css/main.1ee77312.chunk.css",
+    "main.css": "/webpage-creation-challenge/static/css/main.885a5f93.chunk.css",
     "main.js": "/webpage-creation-challenge/static/js/main.1efa36cb.chunk.js",
     "main.js.map": "/webpage-creation-challenge/static/js/main.1efa36cb.chunk.js.map",
     "runtime-main.js": "/webpage-creation-challenge/static/js/runtime-main.f5390dde.js",
@@ -12,7 +12,7 @@
     "static/js/3.a3d77502.chunk.js.map": "/webpage-creation-challenge/static/js/3.a3d77502.chunk.js.map",
     "index.html": "/webpage-creation-challenge/index.html",
     "static/css/2.8c0e6b67.chunk.css.map": "/webpage-creation-challenge/static/css/2.8c0e6b67.chunk.css.map",
-    "static/css/main.1ee77312.chunk.css.map": "/webpage-creation-challenge/static/css/main.1ee77312.chunk.css.map",
+    "static/css/main.885a5f93.chunk.css.map": "/webpage-creation-challenge/static/css/main.885a5f93.chunk.css.map",
     "static/js/2.851a5400.chunk.js.LICENSE.txt": "/webpage-creation-challenge/static/js/2.851a5400.chunk.js.LICENSE.txt",
     "static/media/IMG_Niki.5eeaf6b0.jpg": "/webpage-creation-challenge/static/media/IMG_Niki.5eeaf6b0.jpg",
     "static/media/preprbanner_01.def3e8ce.jpg": "/webpage-creation-challenge/static/media/preprbanner_01.def3e8ce.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.f5390dde.js",
     "static/css/2.8c0e6b67.chunk.css",
     "static/js/2.851a5400.chunk.js",
-    "static/css/main.1ee77312.chunk.css",
+    "static/css/main.885a5f93.chunk.css",
     "static/js/main.1efa36cb.chunk.js"
   ]
 }
