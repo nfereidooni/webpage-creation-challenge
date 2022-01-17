@@ -24,4 +24,9 @@
         padding-left: 0px;
     }
   }
+
+.icon {
+    display: inline-block;
+    width: 25px;
+}
   
